@@ -17,5 +17,5 @@ Feature: Checking User Registration
 
     Examples:  
       | FirstName | LastName | InvalidEmail          | Password    | ConfirmPassword | ValidEmail               | Message                 												    | error																												| 
-      | Bodireddy    | Supriya    | 	qkjbqke			         | Pass@1234   | Pass@1234	     | bodreddysupriya1@gmail.com    |Thank you for registering with Main Website Store.   | Please enter a valid email address (Ex: johndoe@domain.com).| 
+      | Bodireddy    | Supriya    | 	qkjbqke			         | Pass@1234   | Pass@1234	     | bodredysupriya1@gmail.com    |Thank you for registering with Main Website Store.   | Please enter a valid email address (Ex: johndoe@domain.com).| 
     
