@@ -14,10 +14,10 @@ public class SignInObjects extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	public By email = By.xpath("//input[@id='email']");
-	public By password = By.xpath("//fieldset[@class='fieldset login']//input[@id='pass']");
-	public By signin = By.xpath("//fieldset[@class='fieldset login']//span[contains(text(),'Sign In')]");
-	public By error = By.xpath("//div[@data-bind='html: $parent.prepareMessageForHtml(message.text)']");
+	//public By email = By.xpath("//input[@id='email']");
+	//public By password = By.xpath("//fieldset[@class='fieldset login']//input[@id='pass']");
+	//public By signin = By.xpath("//fieldset[@class='fieldset login']//span[contains(text(),'Sign In')]");
+	//public By error = By.xpath("//div[@data-bind='html: $parent.prepareMessageForHtml(message.text)']");
 
 	// Input Fields
 	@FindBy(xpath = "//input[@id='email']")

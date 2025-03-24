@@ -9,14 +9,11 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Excel {
-	// Reads data from Excel and returns as list of lists
 	public static List<List<String>> dataFromExcel(String filePath, int sheetNo)
  {
 	    List<List<String>> credentials = null;
 	    
 	    try {
-	    	
-	    	//Initializing list to store Excel data
 	        credentials = new ArrayList<>();
 	        FileInputStream file = new FileInputStream(new File(filePath));
 	        Workbook workbook = new XSSFWorkbook(file);
@@ -29,8 +26,6 @@ public class Excel {
 	                    Cell cell = row.getCell(j);
 	                    if (cell != null) {
 	                       try {
-	                    	   
-	                    	   //Try to read the cell as string
 	                    	   rowData.add(cell.getStringCellValue());
 	                    	   
 	                       }catch (Exception e) {

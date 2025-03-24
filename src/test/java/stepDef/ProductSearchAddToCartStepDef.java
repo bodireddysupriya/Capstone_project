@@ -1,7 +1,6 @@
 package stepDef;
 
 import java.util.List;
-import java.util.concurrent.TimeoutException;
 
 import org.testng.Assert;
 
@@ -19,7 +18,7 @@ import pages.SignInPage;
 public class ProductSearchAddToCartStepDef {
 
 	@When("User clicks the {string} link on the homepage")
-	public void user_clicks_the_link_on_the_homepage(String string) {
+	public void user_clicks_the_link_on_the_homepage(String string) throws Exception {
 		HomePage.clickOnSignIn();
 	}
 
@@ -42,7 +41,7 @@ public class ProductSearchAddToCartStepDef {
 	}
 
 	@And("User clicks on the {string}  from the search results")
-	public void user_clicks_on_the_from_the_search_results(String string) throws TimeoutException  {
+	public void user_clicks_on_the_from_the_search_results(String string) throws Exception  {
 		ProductSearchAddToCartPage.selectingSearchData(string);
 	}
 

@@ -13,12 +13,12 @@ import pages.SignInPage;
 public class SignINStepdef
 {
 	@When("User clicks the link {string}")
-	public void user_clicks_the_link(String string) {
+	public void user_clicks_the_link(String string) throws Exception {
 	   HomePage.clickOnSignIn();
 	}
 
 	@And("User enters invalid email {string} and password {string}")
-	public void user_enters_invalid_email_and_password(String string, String string2) {
+	public void user_enters_invalid_email_and_password(String string, String string2) throws Exception {
 	   SignInPage.enterInvalidEmail(string);
 	   SignInPage.enterInvalidPassword(string2);
 	   

@@ -1,7 +1,5 @@
 package pages;
 
-import java.util.concurrent.TimeoutException;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,11 +7,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import base.BaseClass;
 import objects.ProductSearchAddToCartObjects;
+import screenshot.Capture;
 
 public class ProductSearchAddToCartPage extends BaseClass {
 	 static ProductSearchAddToCartObjects obj;
 
-	    public static void selectingSearchData(String str) throws TimeoutException {
+	    public static void selectingSearchData(String str) throws Exception {
+	    	logger1.addScreenCaptureFromPath(Capture.screenShot("Product to cart"));
 	        obj = new ProductSearchAddToCartObjects();
 	        try {
 	            boolean found = false;

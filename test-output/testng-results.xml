@@ -1,57 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-22T16:33:15 IST" name="Default suite" finished-at="2025-03-22T16:33:16 IST" duration-ms="221">
+  <suite started-at="2025-03-23T15:47:26 IST" name="Default suite" finished-at="2025-03-23T15:48:32 IST" duration-ms="65885">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.LogoutTestRunner@3214ee6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-22T16:33:15 IST" name="Default test" finished-at="2025-03-22T16:33:16 IST" duration-ms="221">
-      <class name="testNG.RegistrationInvalidTest">
-        <test-method signature="testCreateAccountWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNG.RegistrationInvalidTest@2f953efd]" started-at="2025-03-22T16:33:16 IST" name="testCreateAccountWithInvalidCredentials" finished-at="2025-03-22T16:33:16 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'firstname' is required by @Test on method testCreateAccountWithInvalidCredentials but has not been marked @Optional or defined
-in C:\Users\bodir\AppData\Local\Temp\testng-eclipse-928732802\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'firstname' is required by @Test on method testCreateAccountWithInvalidCredentials but has not been marked @Optional or defined
-in C:\Users\bodir\AppData\Local\Temp\testng-eclipse-928732802\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2025-03-23T15:47:26 IST" name="Default test" finished-at="2025-03-23T15:48:32 IST" duration-ms="65885">
+      <class name="testRunner.LogoutTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.LogoutTestRunner@3214ee6]" started-at="2025-03-23T15:47:26 IST" name="setUpClass" finished-at="2025-03-23T15:47:26 IST" duration-ms="697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@668cc9a2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateAccountWithInvalidCredentials -->
-      </class> <!-- testNG.RegistrationInvalidTest -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.LogoutTestRunner@3214ee6]" started-at="2025-03-23T15:47:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-23T15:48:31 IST" duration-ms="65065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check the Logout functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checking Logout Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.LogoutTestRunner@3214ee6]" started-at="2025-03-23T15:48:32 IST" name="tearDownClass" finished-at="2025-03-23T15:48:32 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.LogoutTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,5 +31,11 @@ public class AddToCartObjects extends BaseClass{
 
     @FindBy(css = ".message-success")
     public WebElement cartMessage;
+    
+    @FindBy(xpath = "//span[@class='price']")
+    public WebElement cartAmountElement;
+    
+    @FindBy(xpath = "//a[@class='action showcart']")
+    public WebElement cartSymbolElement;
 
 }

@@ -13,8 +13,8 @@ public class LogoutObjects extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-    public By accountDropdown = By.xpath("//button[@data-action='customer-menu-toggle']");
-    public By logout = By.xpath("//a[contains(text(),'Sign Out')]");
+    //public By accountDropdown = By.xpath("//button[@data-action='customer-menu-toggle']");
+    //public By logout = By.xpath("//a[contains(text(),'Sign Out')]");
 
 
     @FindBy(xpath = "//button[@data-action='customer-menu-toggle']")

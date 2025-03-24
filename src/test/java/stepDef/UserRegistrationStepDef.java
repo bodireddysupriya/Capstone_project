@@ -30,7 +30,7 @@ public class UserRegistrationStepDef {
 	}
 
 	@And("User enters the valid {string} in firstname textbox")
-	public void user_enters_the_valid_in_firstname_textbox(String string) {
+	public void user_enters_the_valid_in_firstname_textbox(String string) throws Exception {
 		RegistrationPage.enterFirstName(string);
 	}
 
@@ -55,7 +55,7 @@ public class UserRegistrationStepDef {
 	}
 
 	@And("User clicks the Create an account button")
-	public void user_clicks_the_create_an_account_button() {
+	public void user_clicks_the_create_an_account_button() throws Exception {
 		RegistrationPage.clickCreateAnAccount();
 	}
 

@@ -14,10 +14,10 @@ public class MyAccountObject extends BaseClass {
     }
 
     // ✅ Fixed XPath for searchItem
-    public By myAccountText = By.xpath("//span[@class='base']");
-    public By searchBox = By.xpath("//input[@id='search']");
-    public By searchItem = By.xpath("//ul[@role='listbox']/li/span[1]"); // ✅ Fixed XPath
-    public By RegistrationText = By.xpath("//div[@data-bind='html: $parent.prepareMessageForHtml(message.text)']");
+   // public By myAccountText = By.xpath("//span[@class='base']");
+   // public By searchBox = By.xpath("//input[@id='search']");
+  //  public By searchItem = By.xpath("//ul[@role='listbox']/li/span[1]"); // ✅ Fixed XPath
+   // public By RegistrationText = By.xpath("//div[@data-bind='html: $parent.prepareMessageForHtml(message.text)']");
 
     @FindBy(xpath = "//span[@class='base']")
     public WebElement myAccountTextElement;
