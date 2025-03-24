@@ -4,10 +4,10 @@
   <test thread-count="5" name="Test">
   <classes>
   <class name="testRunner.UserRegistrationTestRunner"/>
- <!-- <class name="testRunner.LoginTestRunner"/>
+  <class name="testRunner.LoginTestRunner"/>
   <class name="testRunner.ProductSearchAddToCartTestRunner"/>
   <class name="testRunner.LogoutTestRunner"/>
-  <class name="testRunner.AddingMultipleProductsTestRunner"/>-->
+  <class name="testRunner.AddingMultipleProductsTestRunner"/>
   
   
   </classes>
