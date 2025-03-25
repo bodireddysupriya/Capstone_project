@@ -12,7 +12,6 @@
       <class name="testRunner.ProductSearchAddToCartTestRunner"/>
       <class name="testRunner.AddingMultipleProductsTestRunner"/>
       <class name="testNG.ProceedToCheckout"/>
-      <class name="testNG.MultipleProducts"/>
       <class name="testRunner.LogoutTestRunner"/>
     </classes>
   </test>

@@ -19,6 +19,7 @@ public class ProductPage2 {
     public ProductPage2(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        // Fluentwait initialization
         wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(20))
                 .pollingEvery(Duration.ofSeconds(2))
