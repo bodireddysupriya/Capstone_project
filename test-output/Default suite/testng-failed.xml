@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.RegistrationInvalidTest">
+      <class name="testNG.MultipleProducts">
         <methods>
+          <include name="testAddRandomWomenHoodiesToCartAndCheckout"/>
           <include name="setUp"/>
-          <include name="testCreateAccountWithInvalidCredentials"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- testNG.RegistrationInvalidTest -->
+      </class> <!-- testNG.MultipleProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

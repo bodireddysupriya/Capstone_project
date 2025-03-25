@@ -2,17 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  <classes>
-  <class name="testRunner.UserRegistrationTestRunner"/>
-  <class name="testRunner.LoginTestRunner"/>
-  <class name="testRunner.ProductSearchAddToCartTestRunner"/>
-  <class name="testRunner.LogoutTestRunner"/>
-  <class name="testRunner.AddingMultipleProductsTestRunner"/>
-  
-  
-  </classes>
-  </test> <!-- Test -->
+    <parameter name="browser" value="chrome" />
+    <parameter name="url" value="https://magento.softwaretestingboard.com/customer/account/login/" />
+    <parameter name="email" value="bodireddysupriya@gmail.com" />
+    <parameter name="password" value="Supriya@1234" />
+    <classes>
+      <class name="testRunner.UserRegistrationTestRunner"/>
+      <class name="testRunner.LoginTestRunner"/>
+      <class name="testRunner.ProductSearchAddToCartTestRunner"/>
+      <class name="testRunner.AddingMultipleProductsTestRunner"/>
+      <class name="testNG.ProceedToCheckout"/>
+      <class name="testNG.MultipleProducts"/>
+      <class name="testRunner.LogoutTestRunner"/>
+    </classes>
+  </test>
   <listeners>
-		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-	</listeners>
-</suite> <!-- Suite -->
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+  </listeners>
+</suite>
