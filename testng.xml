@@ -11,8 +11,9 @@
       <class name="testRunner.LoginTestRunner"/>
       <class name="testRunner.ProductSearchAddToCartTestRunner"/>
       <class name="testRunner.AddingMultipleProductsTestRunner"/>
-      <class name="testNG.ProceedToCheckout"/>
+      <class name="testNG.ProceedToCheckoutTC"/>
       <class name="testRunner.LogoutTestRunner"/>
+      
     </classes>
   </test>
   <listeners>

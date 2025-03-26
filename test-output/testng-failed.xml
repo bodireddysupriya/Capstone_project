@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.MultipleProducts">
+      <class name="testRunner.UserRegistrationTestRunner">
         <methods>
-          <include name="testAddRandomWomenHoodiesToCartAndCheckout"/>
-          <include name="setUp"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNG.MultipleProducts -->
+      </class> <!-- testRunner.UserRegistrationTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ProceedToCheckout extends BaseClass1 {
+public class ProceedToCheckoutTC extends BaseClass1 {
     LoginPage loginPage;
     ProductPage2 productPage;
 
